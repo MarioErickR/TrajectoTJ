@@ -1,0 +1,168 @@
+/* styles.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+    color: #333;
+}
+
+header {
+    background: #005BBB;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header .nav-links li {
+    display: inline;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 95%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section.ruta {
+    text-align: center;
+}
+
+section.ruta .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto; /* Center the container horizontally */
+    gap: 3rem; /* Add space between the input groups and button */
+}
+
+section.ruta .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    width: 20%;
+}
+
+section.ruta input[type="text"] {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 100%; /* Make input take full width of input-group */
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px; /* Adjust as needed */
+    font-weight: bold;
+}
+
+section.ruta button {
+    padding: 0.5rem 1rem;
+    background: #1E90FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 10px;
+    align-self: center; /* Center the button vertically */
+    height: 50px; /* Match the height of the input fields */
+    margin-top: 1rem; /* Adjust as needed to align with inputs */
+}
+
+section.ruta button:hover {
+    background: #005BBB;
+}
+
+section h2 {
+    margin-top: 2rem;
+    text-align: center;
+    color: #005BBB;
+    text-align: left
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    overflow-x: auto;
+}
+
+.card {
+    width: 223px;
+    height: 300px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 223px;
+    height: 195px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 8px; /* Adjust as needed to control the space between the image and the first h3 */
+}
+
+.card h3 {
+    margin: 0;
+    padding: 0;
+}
+.card h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+section.busqueda {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+section.busqueda input[type="text"] {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+section.busqueda select {
+    padding: 0.5rem;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
